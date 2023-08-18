@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>노트북 제품목록 | 한성컴퓨터</title>
+  <link rel="icon" href="../source/icon/pavicon.png">
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/inc.css">
+  <link rel="stylesheet" href="../css/product-list.css">
+</head>
+<body>
+  <!-- mob-header -->
+  <header class="mob-header-wrap">
+    <div class="mob-header">
+      <a href="#"><img src="../source/header-logo.png" alt="&#40;주&#41;한성" title="메인으로 가기" class="mob-header-logo"></a>
+      <input class="burger-check" type="checkbox" id="burger-check"/>
+      <label class="burger-icon" for="burger-check">
+        <span class="burger-sticks"></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- Header -->
+  <header class="header">
+
+    <!-- header wrap -->
+    <div class="header-wrap wrap">
+
+      <!-- header top // logo -->
+      <div class="header-top">
+        <h1>
+          <a href="../index.html">
+            <img src="../source/header-logo.png" alt="&#40;주&#41;한성" title="메인으로 가기" class="header-logo">
+          </a>
+        </h1>
+
+        <div class="utility">
+          <ul class="shortcut bar">
+            <li class="shortcut-li"><a href="#" title="검색 창 띄우기">검색</a></li>
+            <li class="shortcut-li"><a href="#" title="이동하기">내 정보</a></li>
+            <li class="shortcut-li"><a href="#" title="이동하기">찜 상품</a></li>
+            <li class="shortcut-li"><a href="./cart.html" title="이동하기">장바구니</a></li>
+          </ul>
+          <a href="#" class="bar" title="이동하기">회사소개</a>
+          <a href="https://www.hansungcom.co.kr/" class="b2b" title="새 창으로" target="_blank">B2B</a>
+        </div>
+      </div>
+    </div>
+      
+      <!-- header bottom // gnb -->
+      <nav>
+        <div class="header-bottom wrap">
+          <ul class="depth1 left">
+            <li class="depth1-li n1" data-name="n1"><a href="#">PC/모니터</a></li>
+            <li class="depth1-li n2" data-name="n2"><a href="#">주변기기</a></li>
+            <li class="depth1-li n3" data-name="n3"><a href="#">TV</a></li>
+            <li class="depth1-li n4" data-name="n4"><a href="#">전자칠판</a></li>
+            <li class="depth1-li n5" data-name="n5"><a href="#">리퍼비시</a></li>
+          </ul>
+          
+          <ul class="depth1 right">
+            <li class="depth1-li"><a href="#">고객센터</a></li>
+            <li class="depth1-li"><a href="#">자료실</a></li>
+            <li class="depth1-li"><a href="./event.html">이벤트</a></li>
+          </ul>
+        </div>
+        
+        <!-- 드롭다운 메뉴 -->
+        <div class="depth2-wrap">
+          <ul class="depth2 n1 wrap" data-name="n1">
+            <li class="depth2-li g1"><a href="#">노트북</a>
+              
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">Bossmonster 시리즈</a></li>
+                <li class="depth3-li"><a href="#">TFX 시리즈</a></li>
+                <li class="depth3-li"><a href="#">TFG 시리즈</a></li>
+              </ul>
+            </li>
+            <li class="depth2-li g2"><a href="#">데스크탑</a>
+                  
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">타워형 PC</a></li>
+                <li class="depth3-li"><a href="#">슬림형 PC</a></li>
+              </ul>
+            </li>
+            <li class="depth2-li g3"><a href="#">모니터</a>
+                  
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">평면형 모니터</a></li>
+                <li class="depth3-li"><a href="#">커브드 모니터</a></li>
+              </ul>
+            </li>
+            <li class="gnb-banner">
+              <a href="#">
+                <p class="banner-text">
+                  <span class="text">Taskforce for gamer<br></span>
+                  <span class="category">PC/모니터</span>
+                </p>
+                <img src="../source/gnb-banner-01.png" alt="PC/모니터 메뉴 배너">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="depth2 n2 wrap" data-name="n2">
+            <li class="depth2-li"><a href="#">입력장치</a>
+              
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">키보드</a></li>
+                <li class="depth3-li"><a href="#">마우스</a></li>
+                <li class="depth3-li"><a href="#">음향기기</a></li>
+                <li class="depth3-li"><a href="#">웹캠</a></li>
+              </ul>
+            </li>           
+            <li class="depth2-li"><a href="#">악세사리</a>
+
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">노트북 악세사리</a></li>
+                <li class="depth3-li"><a href="#">모니터 악세사리</a></li>
+              </ul>
+            </li>
+            <li class="depth2-li"><a href="#">기타</a>
+
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">게이밍 의자</a></li>
+                <li class="depth3-li"><a href="#">PD충전기</a></li>
+              </ul>
+            </li>
+            
+            <!-- 메뉴 배너 -->
+            <li class="gnb-banner">
+              <a href="#">
+                <p class="banner-text">
+                  <span class="text">Taskforce for gamer<br></span>
+                  <span class="category">주변기기</span>
+                </p>
+                <img src="../source/gnb-banner-02.png" alt="주변기기 메뉴 배너">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="depth2 n5 wrap" data-name="n5">
+            <li class="depth2-li"><a href="#">PC/모니터</a></li>
+
+            <li class="depth2-li"><a href="#">TV</a></li>
+
+            <li class="depth2-li"><a href="#">기타</a>
+
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">게이밍 의자</a></li>
+                <li class="depth3-li"><a href="#">PD충전기</a></li>
+              </ul>
+            </li>
+  
+            <!-- 메뉴 배너 -->
+            <li class="gnb-banner">
+              <a href="#">
+                <p class="banner-text">
+                  <span class="text">Taskforce for gamer<br></span>
+                  <span class="category">리퍼비시</span>
+                </p>
+                <img src="../source/gnb-banner-03.png" alt="리퍼비시 메뉴 배너">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  </header>
+  
+
+
+  <!-- top 버튼 -->
+  <a href="#top" class="btn-top" title="상단으로 이동하기"><img src="../source/icon/ico-arrow_top.svg" alt=""></a>
+  <!-- 브레드 크럼브 -->
+  <div class="breadcrumb" >
+    <ul class="wrap">
+      <li><a href="../index.html">홈</a></li>
+      <li><a href="#">제품</a></li>
+      <li><a href="#">PC/모니터</a></li>
+      <li><a href="#">노트북</a></li>
+    </ul>
+  </div>
+  <!-- Main Visual -->
+  <div class="main-visual-margin" id="top"></div>
+  <div class="main-visual">
+    <h2 class="main-visual-title">노트북</h2>
+  </div>
+
+  <!-- 상세검색 -->
+  <div class="content-wrap search-wrap">
+
+    <p>상세검색</p>
+    <ul>
+      <li><a href="#">최신순</a></li>
+      <li><a href="#">가격순</a></li>
+    </ul>
+  </div>
+
+  <!-- 상품 -->
+  <div class="content content-wrap">
+    <aside class="filter">
+      <div class="filter-wrap">
+        <div class="filter-button">
+          <p>화면크기</p>
+          <button></button>
+        </div>
+        <div class="filter-content">
+          <label>
+            <input type="radio" name="display-size" checked="checked">
+            <span>13인치&#40;33cm&#41;</span>
+          </label>
+          <label>
+          <input type="radio" name="display-size">
+          <span>14인치&#40;35.5cm&#41;</span>
+          </label>
+          <label>
+            <input type="radio" name="display-size">
+            <span>15인치&#40;38.1cm&#41;</span>
+          </label>
+          <label>
+            <input type="radio" name="display-size">
+            <span>16인치&#40;40.6cm&#41;</span>
+          </label>
+          <label>
+            <input type="radio" name="display-size">
+            <span>17인치&#40;43.1cm&#41;</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter-wrap">
+        <div class="filter-button">
+          <p>프로세서&#40;CPU&#41;</p>
+          <button></button>
+        </div>
+        <div class="filter-content">
+          <label>
+            <input type="radio" name="cpu" checked="checked">
+            <span>인텔® 펜티엄®</span>
+          </label>
+          <label>
+            <input type="radio" name="cpu">
+            <span>인텔® 코어™ i3</span>
+          </label>
+          <label>
+            <input type="radio" name="cpu">
+            <span>인텔® 코어™ i5</span>
+          </label>
+          <label>
+            <input type="radio" name="cpu">
+            <span>인텔® 코어™ i7</span>
+          </label>
+          <label>
+            <input type="radio" name="cpu">
+            <span>인텔® 코어™ i9</span>
+          </label>
+          <label>
+            <input type="radio" name="cpu">
+            <span>인텔® 셀러론®</span>
+          </label>
+          <label>
+            <input type="radio" name="cpu">
+            <span>AMD Ryzen™</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter-wrap">
+        <div class="filter-button">
+          <p>그래픽&#40;GPU&#41;</p>
+          <button></button>
+        </div>
+        <div class="filter-content">
+          <label>
+            <input type="radio" name="gpu" checked="checked">
+            <span>NVIDIA® GeForce®</span>
+          </label>
+          <label>
+            <input type="radio" name="gpu">
+            <span>인텔® Iris® Xe Graphics</span>
+          </label>
+          <label>
+            <input type="radio" name="gpu">
+            <span>Radeon™ Graphics</span>
+          </label>
+          <label>
+            <input type="radio" name="gpu">
+            <span>인텔® UHD Graphics</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter-wrap">
+        <div class="filter-button">
+          <p>메모리&#40;RAM&#41;</p>
+          <button></button>
+        </div>
+        <div class="filter-content">
+          <label>
+            <input type="radio" name="ram" checked="checked">
+            <span>8GB</span>
+          </label>
+          <label>
+            <input type="radio" name="ram">
+            <span>16GB</span>
+          </label>
+          <label>
+            <input type="radio" name="ram">
+            <span>32GB</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter-wrap">
+        <div class="filter-button">
+          <p>저장장치</p>
+          <button></button>
+        </div>
+        <div class="filter-content">
+          <label>
+            <input type="radio" name="ssd" checked="checked">
+            <span>SSD 250GB</span>
+          </label>
+          <label>
+            <input type="radio" name="ssd">
+            <span>SSD 500GB</span>
+          </label>
+          <label>
+            <input type="radio" name="ssd">
+            <span>SSD 1TB</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter-wrap">
+        <div class="filter-button">
+          <p>운영체제&#40;OS&#41;</p>
+        </div>
+        <div class="filter-content">
+          <label>
+            <input type="radio" name="os" checked="checked">
+            <span>윈도우 11</span>
+          </label>
+          <label>
+            <input type="radio" name="os">
+            <span>윈도우 10</span>
+          </label>
+          <label>
+            <input type="radio" name="os">
+            <span>OS 미탑재</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter-wrap">
+        <div class="filter-button">
+          <p>무게</p>
+          <button></button>
+        </div>
+        <div class="filter-content">
+          <label>
+            <input type="radio" name="weight" checked="checked">
+            <span>1,000g ~ 1,499g</span>
+          </label>
+          <label>
+            <input type="radio" name="weight">
+            <span>1,500g ~ 1,999g</span>
+          </label>
+          <label>
+            <input type="radio" name="weight">
+            <span>2,000g ~ 2,499g</span>
+          </label>
+          <label>
+            <input type="radio" name="weight">
+            <span>2,500g 이상</span>
+          </label>
+        </div>
+      </div>
+      <div class="suggest-prod">
+        <p>제품추천</p>
+        <p>제품 고르기 어려우시다면, 고객님의 상황에 맞춰 제품을 추천해드립니다.</p>
+      </div>
+    </aside>
+
+    <section class="prod-list">
+      <figure class="prod-wrap">
+        <a href="./product-detail.html">
+          <img src="../source/prod-notebook-GTS73_N9X8U14_W11.jpg" alt="Bossmonster GTS63-T9H6Q24">
+        </a>
+        <figcaption>
+          <a href="./product-detail.html">
+            <p class="prod-tit">Bossmonster GTS73 N9X8U14 W11</p>
+            <p class="prod-info">UHD 해상도로 보는 더 강력한 퍼포먼스!</p>
+          </a>
+          <div class="prod-price-wrap">
+            <em class="prod-price">4,148,000</em><p>원
+            <span class="prod-price-line">4,366,320원</span></p>
+          </div>
+          <div class="prod-spec">
+            <span>
+              Windows 11 Home
+            </span>
+            <span>
+              DDR5 32GB
+            </span>
+            <span>
+              SSD 1TB
+            </span>
+            <span>
+              GeForce RTX4090
+            </span>
+            <span>
+              13세대 인텔® 코어™ i9-13900HX
+            </span>
+            <span>
+              3.43kg
+            </span>
+            <span>
+              광시야각 IPS계열 패널 144Hz
+            </span>          
+          </div>
+          <div class="prod-btn">
+            <p class="prod-today">오늘출발</p>
+            <a href="#" class="prod-buy">구매하기</a>
+          </div>
+          <div class="prod-ico">
+            <p class="prod-new">NEW</p>
+            <div>
+              <a href="./cart.html" class="ico-cart"><img src="../source/icon/ico-prod-float.svg" alt=""></a>
+              <a href="#" class="ico-like"><img src="../source/icon/ico-prod-float.svg" alt=""></a>
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="prod-wrap">
+        <a href="#">
+          <img src="../source/prod-notebook-GTS63_T9H6Q24.jpg" alt="Bossmonster GTS63-T9H6Q24">
+        </a>
+        <figcaption>
+          <a href="#">
+            <p class="prod-tit">Bossmonster GTS63 T9H6Q24</p>
+            <p class="prod-info">UHD 해상도로 보는 더 강력한 퍼포먼스!</p>
+          </a>
+          <div class="prod-price-wrap">
+            <em class="prod-price">4,148,000</em><p>원
+            <span class="prod-price-line">4,366,320원</span></p>
+          </div>
+          <div class="prod-spec">
+            <span>
+              Windows 11 Home
+            </span>
+            <span>
+              DDR5 32GB
+            </span>
+            <span>
+              SSD 1TB
+            </span>
+            <span>
+              GeForce RTX4090
+            </span>
+            <span>
+              13세대 인텔® 코어™ i9-13900HX
+            </span>
+            <span>
+              3.43kg
+            </span>
+            <span>
+              광시야각 IPS계열 패널 144Hz
+            </span>          
+          </div>
+          <div class="prod-btn">
+            <p class="prod-today">오늘출발</p>
+            <a href="#" class="prod-buy">구매하기</a>
+          </div>
+          <div class="prod-ico">
+            <p class="prod-new">NEW</p>
+            <div>
+              <a href="./cart.html" class="ico-cart"><img src="../source/icon/ico-prod-float.svg" alt=""></a>
+              <a href="#" class="ico-like"><img src="../source/icon/ico-prod-float.svg" alt=""></a>
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="prod-wrap">
+        <a href="#">
+          <img src="../source/prod-notebook-GTS63_T9H6Q24.jpg" alt="Bossmonster GTS63-T9H6Q24">
+        </a>
+        <figcaption>
+          <a href="#">
+            <p class="prod-tit">Bossmonster GTS63 T9H6Q24</p>
+            <p class="prod-info">UHD 해상도로 보는 더 강력한 퍼포먼스!</p>
+          </a>
+          <div class="prod-price-wrap">
+            <em class="prod-price">4,148,000</em><p>원
+            <span class="prod-price-line">4,366,320원</span></p>
+          </div>
+          <div class="prod-spec">
+            <span>
+              Windows 11 Home
+            </span>
+            <span>
+              DDR5 32GB
+            </span>
+            <span>
+              SSD 1TB
+            </span>
+            <span>
+              GeForce RTX4090
+            </span>
+            <span>
+              13세대 인텔® 코어™ i9-13900HX
+            </span>
+            <span>
+              3.43kg
+            </span>
+            <span>
+              광시야각 IPS계열 패널 144Hz
+            </span>          
+          </div>
+          <div class="prod-btn">
+            <p class="prod-today">오늘출발</p>
+            <a href="#" class="prod-buy">구매하기</a>
+          </div>
+          <div class="prod-ico">
+            <p class="prod-new">NEW</p>
+            <div>
+              <a href="./cart.html" class="ico-cart"><img src="../source/icon/ico-prod-float.svg" alt=""></a>
+              <a href="#" class="ico-like"><img src="../source/icon/ico-prod-float.svg" alt=""></a>
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+      <ul class="pagenation">
+        <li class="pagenation-li prev"><a href="#">이전</a></li>
+        <li class="pagenation-li on"><a href="#">1</a></li>
+        <li class="pagenation-li"><a href="#">2</a></li>
+        <li class="pagenation-li next"><a href="#">다음</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- 푸터 -->
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-top">
+        <div class="footer-inner wrap">
+          <div class="footer-inner-left">
+            <dl>
+              <dt>
+                <address>
+                  <a href="#">02&#41;3272-1003</a>
+                </address>
+              </dt>
+              <dd>평일 10:00~17:00</dd>
+            </dl>
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">서비스센터 안내</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">카톡상담</a></li>
+              <li><a href="#">톡톡상담</a></li>
+            </ul>
+          </div>
+          <ul class="sns">
+            <li>
+              <a href="#" class="sns-fb" target="_blank" title="새 창으로">페이스북</a>
+            </li>
+            <li>
+              <a href="#" class="sns-inst" target="_blank" title="새 창으로">인스타그램</a>
+            </li>
+            <li>
+              <a href="#" class="sns-ytb" target="_blank" title="새 창으로">유튜브</a>
+            </li>
+            <li>
+              <a href="#" class="sns-ntv" target="_blank" title="새 창으로">네이버 티비</a>
+            </li>
+            <li>
+              <a href="#" class="sns-blog" target="_blank" title="새 창으로">네이버 블로그</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="index.html" class="footer-logo wrap">
+          <img src="../source/header-logo.png" alt="좋은 컴퓨터를 만드는 사람들 한성" >
+        </a>
+        <p class="footer-content wrap">
+        <span>&#40;주&#41;한성</span>
+          <span>
+            <a href="https://goo.gl/maps/eHWPu4xhU1VPw8uT9" target="_blank" class="footer-map"></a>
+            서울특별시 강서구 마곡중앙8로 7길 35, 1층 (마곡동)</span>
+          <span>대표이사 : 한동열</span>
+          <span>사업자등록번호 : 106-86-17410</span>
+        </p>
+        <p class="footer-content wrap">
+          <span>통신판매신고 : 2021-서울강서-1301</span>
+          <span>개인정보 관리자 : 남훈우</span>
+        </p>
+          <address class="footer-address wrap">
+            <span>이메일 : webmaster@monsterlabs.co.kr</span>
+            <span>전화 : 02-715-5714</span>
+            <span>팩스 : 02-714-5714</span>
+          </address>
+        <ul class="footer-content wrap footer-link">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">소비자보호원</a></li>
+          <li><a href="#">전자거래분쟁조정위원회</a></li>
+          <li><a href="#">제휴문의</a></li>
+          <li><a href="#">사이트맵</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,363 @@
+
+
+/* 메인 비주얼 */
+.main-visual{
+  width: 100%;
+  height: 36rem;
+  background-image: url(../source/product-banner-notebook.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.main-visual-title{
+  font: var(--header-1);
+  margin-left: calc(360/1920*100%);
+  position: relative;
+  top:50%;
+}
+
+
+/* Aside 필터 */
+aside{
+  width: 32.7rem;
+  margin-right: 2.4rem;
+}
+.filter-wrap,
+.filter-content{
+  display: flex;
+  flex-direction: column;
+}
+.filter-wrap{
+  border-bottom: 1px solid var(--gray-300);
+}
+.filter-wrap:first-child{
+  border-top: 1px solid var(--gray-800);
+}
+.filter-wrap:last-child{
+  border-bottom: 1px solid var(--gray-800);
+  margin-bottom: 2.4rem;
+}
+.filter-wrap p{
+  font: var(--header-4);
+  margin:2.4rem 0;
+  position: relative;
+}
+.filter-button{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-button button{
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url(../source/icon/ico-upper.svg);
+  background-color: #fff;
+  border: none;
+}
+.filter-content label:last-child{
+  margin-bottom: 2.4rem;
+}
+
+/* 제품추천 */
+.suggest-prod{
+  margin-top: 2.4rem;
+  padding: 1.2rem 1.6rem;
+  background-color: var(--gray-100);
+  border-radius: 1rem;
+}
+.suggest-prod p:nth-child(1){
+  font: var(--header-2);
+}
+.suggest-prod p:nth-child(2){
+  font: var(--body-3);
+  word-break:break-all;
+}
+
+/* 필터버튼 up */
+
+.up button{
+  transform: rotate(180deg);
+  transition: 0.5s ease-in-out;
+}
+label{
+  display: flex;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+label span{
+  font:var(--body-2) ;
+  padding: 0.2em 0.4em;
+  vertical-align: center;
+}
+
+[type="radio"]+ span {
+  color: var(--gray-600);
+}
+
+[type="radio"] {
+  appearance: none;
+  background-image: url(../source/icon/ico-label-default.svg);
+  background-size: cover;
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: border 0.5s ease-in-out;
+}
+
+[type="radio"]:checked {
+  background-image: url(../source/icon/ico-label-checked.svg);
+}
+[type="radio"]:checked + span{
+  color:var(--main-color);
+}
+
+[type="radio"]:hover {
+  box-shadow: 0 0 0 max(4px, 0.2em) var(--gray-200);
+  cursor: pointer;
+}
+
+[type="radio"]:hover+span {
+  cursor: pointer;
+  color:var(--gray-800);
+}
+
+[type="radio"]:disabled {
+  background-color: var(--gray-100);
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+[type="radio"]:disabled + span {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/* 상세 검색 */
+
+.search-wrap{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom:  4rem;;
+}
+.search-wrap p{
+  font: var(--header-4);
+}
+.search-wrap ul li{
+  display: inline-block;
+}
+.search-wrap ul li a{
+  font: var(--body-1);
+}
+
+/* content */
+
+
+.content{
+  display: flex;
+}
+
+
+/* figure */
+figure{
+  margin: 1.2rem;
+  position: relative;
+}
+.prod-list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.prod-wrap{
+  width: 30%;
+}
+.prod-wrap a{
+  display: block;
+  overflow: hidden;
+}
+.prod-wrap img{
+  width: 100%;
+  transition: 0.3s ease-in;
+}
+.prod-wrap img:hover{
+  transform: scale(1.1);
+}
+.prod-tit{
+  font: var(--header-3);
+  margin: 1rem 0 0.4rem;
+}
+.prod-info{
+  font: var(--body-2);
+}
+.prod-price-wrap{
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  margin: 0.6rem 0 1rem;
+}
+
+.prod-price-wrap p{
+  font: var(--body-2);
+}
+.prod-price{
+  font: var(--header-4);
+  color: var(--sub-color);
+}
+.prod-price-line{
+  font: var(--body-3);
+  font-weight: 500;
+  text-decoration:line-through;
+}
+  /* 프로덕트 경계선 */
+.prod-spec::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 0.05rem;
+  background-color: var(--gray-500);
+  margin-bottom: 1rem;
+}
+.prod-spec{
+  word-break: break-all;
+}
+.prod-spec span{
+  font: var(--caption-nor);
+  position: relative;
+  white-space:nowrap;
+}
+.prod-spec span::after{
+  content: '';
+  display: inline-block;
+  width: 0.1rem;
+  height: 1rem;
+  background-color: var(--gray-500);
+  margin: 0 1rem;
+}
+/* 프로덕트 버튼 */
+.prod-btn{
+  display: flex;
+  justify-content: space-between;
+  margin: 2.4rem 0;
+}
+.prod-btn a{
+  display: inline-block;
+}
+.prod-today{
+  font: var(--caption-nor);
+  color: var(--gray-500);
+  line-height: 3.6rem;
+  padding: 0  0.8rem 0 4.2rem;
+  background-color: var(--gray-100);
+  position: relative;
+  border-radius: 0.6rem;
+}
+.prod-today::before{
+  content: url(../source/icon/ico-today.svg);
+  display: block;
+  margin-right: 1rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left:0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.prod-buy{
+  font: var(--body-2);
+  padding: 0.6rem 5.2rem;
+  color: #fff;
+  background-color: var(--gray-900);
+  border-radius: 0.6rem;
+  transition: 0.5s ease-in-out;
+}
+.prod-buy:hover{
+  background-color: var(--sub-color);
+}
+
+/* prod float 아이콘 */
+
+.prod-ico{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 1.2rem;
+}
+.prod-ico div{
+  display: flex;
+  gap: 1.2rem;
+  margin-right: 1.2rem;
+}
+.prod-new{
+  display: block;
+  padding: 1rem 1.5rem;
+  font: var(--header-3);
+  line-height: 1;
+  color: #fff;
+  background-color: #BF0B00;
+}
+.prod-ico a{
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #fff;
+  border-radius: 0.6rem;
+}
+.ico-like:hover img{
+  filter: invert(57%) sepia(43%) saturate(4506%) hue-rotate(4deg) brightness(108%) contrast(102%);
+}
+.ico-cart:hover img{
+  filter: invert(59%) sepia(62%) saturate(5257%) hue-rotate(136deg) brightness(96%) contrast(80%);
+}
+.ico-like img,
+.ico-cart img{
+  margin: 0.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: cover;
+  object-position: right;
+}
+.ico-cart img{
+  object-position: left;
+}
+
+
+/* 페이지네이션 */
+
+.pagenation{
+  position: absolute;
+  left: 50%;
+  bottom: -9rem;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+.pagenation-li{
+  display: block;
+}
+.pagenation-li a{
+  display: block;
+  font: var(--header-4);
+  line-height: 1;
+  padding: 1rem 1.4rem;
+  border: 0.1rem solid var(--gray-500);
+  border-radius: 0.6rem;
+  background-color: #fff;
+  transition: 0.5s ease-in-out;
+}
+.pagenation-li.on a{
+  background-color: var(--gray-800);
+}
+.pagenation-li.on a{
+  color: #fff;
+  border-color: var(--gray-800);
+}
+.pagenation-li:hover a{
+  color: var(--main-color);
+}
+/* 이전 / 다음 */

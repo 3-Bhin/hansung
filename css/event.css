@@ -1,0 +1,139 @@
+.main-visual{
+  height: 36rem;
+  background-image: url(../source/event-banner.png);
+  background-size: cover;
+  background-position: center;
+}
+.main-title,.main-text{
+  text-align: center;
+  color: #fff;
+}
+.main-title{
+  padding-top: 15rem;
+  padding-bottom: 0.4rem;
+  font: var(--header-1);
+}
+.main-text{
+  font: var(--body-1);
+}
+
+/* 필터 */
+.event-filter{
+  margin: 4rem auto 7.5rem;
+  text-align: center;
+}
+.event-filter li{
+  display: inline-block;
+  margin: 0 2rem;
+  position: relative;
+  transition: 0.3s ease-in;
+}
+.event-filter li::after{
+  content: '';
+  display: block;
+  width: 130%;
+  height: 80%;
+  background-color: var(--gray-200);
+  position: absolute;
+  top:1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -99;
+  transition: 0.3s ease-in;
+}
+.event-filter li:hover::after{
+  top:0;
+  height: 100%;
+  background-color: var(--main-color);
+}
+.event-filter li:hover a{
+  color: #fff;
+}
+.event-filter a{
+  font: var(--body-2);
+  font-weight: 500;
+  transition: 0.3s ease-in;
+}
+
+/* 이벤트 목록 */
+.item-wrap{
+  margin-top: 3rem;
+}
+.total-count,.event-count{
+  font: var(--header-4);
+}
+.event-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3.6rem;
+}
+.event-list li{
+  display: block;
+  width: 30%;
+}
+.event-img{
+  display: inline-block;
+  width: 100%;
+  height: 44rem;
+  background-image: url(../source/event-thumb-01.jpg);
+  background-size:cover;
+  background-position: center;
+  transition: 0.3s;
+}
+
+/* img css 속성 제이쿼리에서 변경 */
+.event-data{
+  padding: 3rem 1rem;
+}
+.event-tit{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.event-tit span{
+  font: var(--header-3);
+  display: inline-block;
+  width: 80%;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+}
+.share i{
+  font-size: 1.6rem;
+}
+.date *{
+  font:var(--body-3);
+}
+.date span{
+  margin-right: 2.4rem;
+  position: relative;
+}
+.date span::after{
+  content: '';
+  display: inline-block;
+  width: 0.1rem;
+  height: 80%;
+  background-color: var(--gray-400);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -1.2rem;
+}
+.d-day{
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+
+@media screen and (max-width:1080px) {
+  .event-list li{
+    width: 47%;
+  }
+}
+@media screen and (max-width:620px) {
+  .event-list li{
+    width: 100%;
+  }
+}

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>한성컴퓨터</title>
+  <link rel="icon" href="./source/icon/pavicon.png">
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/inc.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <!-- 커스텀 커서 -->
+  <div id="custom_cursor" class="cursor" style="display: none;">
+  </div>
+
+  <!-- mob-header -->
+  <header class="mob-header-wrap" >
+    <div class="mob-header">
+      <a href="#"><img src="./source/header-logo.png" alt="(주)한성" title="메인으로 가기" class="mob-header-logo"></a>
+      <input class="burger-check" type="checkbox" id="burger-check"/>
+      <label class="burger-icon" for="burger-check">
+        <span class="burger-sticks"></span>
+      </label>
+    </div>
+  </header>
+
+  <!-- Header -->
+  <header class="header">
+
+    <!-- header wrap -->
+    <div class="header-wrap wrap">
+
+      <!-- header top // logo -->
+      <div class="header-top">
+        <h1>
+          <a href="index.html">
+            <img src="./source/header-logo.png" alt="(주)한성" title="메인으로 가기" class="header-logo">
+          </a>
+        </h1>
+
+        <div class="utility">
+          <ul class="shortcut bar">
+            <li class="shortcut-li"><a href="#" title="검색 창 띄우기">검색</a></li>
+            <li class="shortcut-li"><a href="#" title="이동하기">내 정보</a></li>
+            <li class="shortcut-li"><a href="#" title="이동하기">찜 상품</a></li>
+            <li class="shortcut-li"><a href="./sub/cart.html" title="이동하기">장바구니</a></li>
+          </ul>
+          <a href="#" class="bar" title="이동하기">회사소개</a>
+          <a href="https://www.hansungcom.co.kr/" class="b2b" title="새 창으로" target="_blank">B2B</a>
+        </div>
+      </div>
+    </div>
+      
+      <!-- header bottom // gnb -->
+      <nav>
+        <div class="header-bottom wrap">
+          <ul class="depth1 left">
+            <li class="depth1-li n1" data-name="n1"><a href="#">PC/모니터</a></li>
+            <li class="depth1-li n2" data-name="n2"><a href="#">주변기기</a></li>
+            <li class="depth1-li n3" data-name="n3"><a href="#">TV</a></li>
+            <li class="depth1-li n4" data-name="n4"><a href="#">전자칠판</a></li>
+            <li class="depth1-li n5" data-name="n5"><a href="#">리퍼비시</a></li>
+          </ul>
+          
+          <ul class="depth1 right">
+            <li class="depth1-li"><a href="#">고객센터</a></li>
+            <li class="depth1-li"><a href="#">자료실</a></li>
+            <li class="depth1-li"><a href="./sub/event.html">이벤트</a></li>
+          </ul>
+        </div>
+        
+        <!-- 드롭다운 메뉴 -->
+        <div class="depth2-wrap">
+          <ul class="depth2 n1 wrap" data-name="n1">
+            <li class="depth2-li g1"><a href="./sub/product-list.html">노트북</a>
+              
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">Bossmonster 시리즈</a></li>
+                <li class="depth3-li"><a href="#">TFX 시리즈</a></li>
+                <li class="depth3-li"><a href="#">TFG 시리즈</a></li>
+              </ul>
+            </li>
+            <li class="depth2-li g2"><a href="#">데스크탑</a>
+                  
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">타워형 PC</a></li>
+                <li class="depth3-li"><a href="#">슬림형 PC</a></li>
+              </ul>
+            </li>
+            <li class="depth2-li g3"><a href="#">모니터</a>
+                  
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">평면형 모니터</a></li>
+                <li class="depth3-li"><a href="#">커브드 모니터</a></li>
+              </ul>
+            </li>
+            <li class="gnb-banner">
+              <a href="#">
+                <p class="banner-text">
+                  <span class="text">Taskforce for gamer<br></span>
+                  <span class="category">PC/모니터</span>
+                </p>
+                <img src="./source/gnb-banner-01.png" alt="PC/모니터 메뉴 배너">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="depth2 n2 wrap" data-name="n2">
+            <li class="depth2-li"><a href="#">입력장치</a>
+              
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">키보드</a></li>
+                <li class="depth3-li"><a href="#">마우스</a></li>
+                <li class="depth3-li"><a href="#">음향기기</a></li>
+                <li class="depth3-li"><a href="#">웹캠</a></li>
+              </ul>
+            </li>           
+            <li class="depth2-li"><a href="#">악세사리</a>
+
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">노트북 악세사리</a></li>
+                <li class="depth3-li"><a href="#">모니터 악세사리</a></li>
+              </ul>
+            </li>
+            <li class="depth2-li"><a href="#">기타</a>
+
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">게이밍 의자</a></li>
+                <li class="depth3-li"><a href="#">PD충전기</a></li>
+              </ul>
+            </li>
+            
+            <!-- 메뉴 배너 -->
+            <li class="gnb-banner">
+              <a href="#">
+                <p class="banner-text">
+                  <span class="text">Taskforce for gamer<br></span>
+                  <span class="category">주변기기</span>
+                </p>
+                <img src="./source/gnb-banner-02.png" alt="주변기기 메뉴 배너">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="depth2 n5 wrap" data-name="n5">
+            <li class="depth2-li"><a href="#">PC/모니터</a></li>
+
+            <li class="depth2-li"><a href="#">TV</a></li>
+
+            <li class="depth2-li"><a href="#">기타</a>
+
+              <ul class="depth3">
+                <li class="depth3-li"><a href="#">게이밍 의자</a></li>
+                <li class="depth3-li"><a href="#">PD충전기</a></li>
+              </ul>
+            </li>
+  
+            <!-- 메뉴 배너 -->
+            <li class="gnb-banner">
+              <a href="#">
+                <p class="banner-text">
+                  <span class="text">Taskforce for gamer<br></span>
+                  <span class="category">리퍼비시</span>
+                </p>
+                <img src="./source/gnb-banner-03.png" alt="리퍼비시 메뉴 배너">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  </header>
+  
+
+
+  <!-- top 버튼 -->
+  <a href="#top" class="btn-top" title="상단으로 이동하기"><img src="./source/icon/ico-arrow_top.svg" alt=""></a>
+
+  <!-- Main Visual -->
+  <div class="main-visual" id="top">
+    <!-- 호버 시 멈추기 -->
+    <video muted autoplay loop>
+      <source src="./source/video/videoplayback.webm" type="video/webm">
+      <strong>해당 브라우저는 비디오를 지원하지 않습니다.</strong>
+    </video>
+  </div>
+
+  <!-- Quick Menu -->
+  <ul class="quick-menu">
+    <li class="quick-menu-li">
+      <a href="#">
+        <div class="quick-ico"><img src="./source/icon/quick-desktop.svg" alt=""></div>
+        <div>데스크탑</div>
+      </a>
+    </li>
+    <li class="quick-menu-li">
+      <a href="#">
+        <div class="quick-ico"><img src="./source/icon/quick-monitor.svg" alt=""></div>
+        <div>모니터</div>
+      </a>
+    </li>
+    <li class="quick-menu-li">
+      <a href="./sub/product-list.html">
+        <div class="quick-ico"><img src="./source/icon/quick-notebook.svg" alt=""></div>
+        <div>노트북</div>
+      </a>
+    </li>
+    <li class="quick-menu-li">
+      <a href="#">
+        <div class="quick-ico"><img src="./source/icon/quick-tv.svg" alt="" ></div>
+        <div>TV</div>
+      </a>
+    </li>
+    <li class="quick-menu-li">
+      <a href="#">
+        <div class="quick-ico"><img src="./source/icon/quick-keyboard.svg" alt="" ></div>
+        <div>키보드</div>
+      </a>
+    </li>
+    <li class="quick-menu-li">
+      <a href="#">
+        <div class="quick-ico"><img src="./source/icon/quick-sound.svg" alt=""></div>
+        <div>음향기기</div>
+      </a>
+    </li>
+    <li class="quick-menu-li">
+      <a href="#">
+        <div class="quick-ico"><img src="./source/icon/quick-service.svg" alt="" ></div>
+        <div>1:1 문의</div>
+      </a>
+    </li>
+    <li class="quick-menu-li">
+      <a href="#">
+        <div class="quick-ico"><img src="./source/icon/quick-as.svg" alt=""></div>
+        <div>A/S 조회</div>
+      </a>
+    </li>
+  </ul>
+
+  <!-- 배너 -->
+  <a href="#" class="content-wrap banner">
+    <img src="./source/banner-01.png" alt="">
+  </a>
+
+  <!-- 베스트 제품 -->
+  <section class="content-wrap">
+    <div class="section-header">
+      <h2>한성 베스트 제품</h2>
+      <p>가장 많이 찾는 인기 제품입니다.</p>
+    </div>
+    <div class="best-prod-wrap">
+      <article class="best-prod">
+        <figure class="prod">
+          <a href="#">
+            <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+          </a>
+            <figcaption class="prod-info">
+              <a href="#">
+                <span class="prod-sub-tit">컴팩트한 사이즈로 강력함을 누리다.</span>
+                <h3 class="prod-name">TFG AX3i706iX</h3>
+                <p class="prod-spec">intel 13세대 13700KF+RTX3060Ti</p>
+                <em class="prod-price">1,849,000</em><span class="prod-unit">원</span>
+              </a>
+            </figcaption>
+          </figure>
+      </article>
+      <article class="best-prod">
+        <figure class="prod">
+          <a href="#">
+            <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+          </a>
+            <figcaption class="prod-info">
+              <a href="#">
+                <span class="prod-sub-tit">컴팩트한 사이즈로 강력함을 누리다.</span>
+                <h3 class="prod-name">TFG AX3i706iX</h3>
+                <p class="prod-spec">intel 13세대 13700KF+RTX3060Ti</p>
+                <em class="prod-price">1,849,000</em><span class="prod-unit">원</span>
+              </a>
+            </figcaption>
+          </figure>
+      </article>
+      <article class="best-prod">
+        <figure class="prod">
+          <a href="#">
+            <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+          </a>
+            <figcaption class="prod-info">
+              <a href="#">
+                <span class="prod-sub-tit">컴팩트한 사이즈로 강력함을 누리다.</span>
+                <h3 class="prod-name">TFG AX3i706iX</h3>
+                <p class="prod-spec">intel 13세대 13700KF+RTX3060Ti</p>
+                <em class="prod-price">1,849,000</em><span class="prod-unit">원</span>
+              </a>
+            </figcaption>
+          </figure>
+      </article>
+      <article class="best-prod">
+        <figure class="prod">
+          <a href="#">
+            <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+          </a>
+            <figcaption class="prod-info">
+              <a href="#">
+                <span class="prod-sub-tit">컴팩트한 사이즈로 강력함을 누리다.</span>
+                <h3 class="prod-name">TFG AX3i706iX</h3>
+                <p class="prod-spec">intel 13세대 13700KF+RTX3060Ti</p>
+                <em class="prod-price">1,849,000</em><span class="prod-unit">원</span>
+              </a>
+            </figcaption>
+          </figure>
+      </article>
+      
+    </div>
+  </section>
+  <!-- 추천 제품 -->
+  <section class="suggest">
+    <div class="suggest-bg"></div>
+    <div class="content-wrap">
+
+      <div class="section-header">
+        <h2>한성 추천 제품</h2>
+        <p>한성컴퓨터에서 추천드리는 제품입니다.</p>
+        
+      </div>
+      <ul class="suggest">
+        <li class="suggest-li on"><a href="#">노트북</a></li>
+        <li class="suggest-li"><a href="#">데스크탑</a></li>
+        <li class="suggest-li"><a href="#">모니터</a></li>
+        <li class="suggest-li"><a href="#">주변기기</a></li>
+        <li class="suggest-li"><a href="#">TV</a></li>
+      </ul>
+      <div>
+        <div class="suggest-prod-wrap">
+          <a href="#" class="suggest-link">
+            <h3>노트북</h3>
+            <p>다른 제품 보러가기</p>
+            <div class="direct-left"><img src="./source/icon/ico-arrow_top.svg" alt=""></div>
+          </a>
+          <article class="suggest-prod">
+            <figure class="prod">
+              <a href="#">
+                <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+              </a>
+                <figcaption class="prod-info">
+                  <a href="#">
+                    <h3 class="prod-name">TFG27F10F 게이밍 리얼 100</h3>
+                    <p class="prod-spec">27인치 / 와이드(16:9) / VA / sRGB 99%</p>
+                    <em class="prod-price">2,049,000</em><span class="prod-unit">원</span>
+                  </a>
+                </figcaption>
+            </figure>
+          </article>
+          <article class="suggest-prod">
+            <figure class="prod">
+              <a href="#">
+                <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+              </a>
+                <figcaption class="prod-info">
+                  <a href="#">
+                    <h3 class="prod-name">TFG27F10F 게이밍 리얼 100</h3>
+                    <p class="prod-spec">27인치 / 와이드(16:9) / VA / sRGB 99%</p>
+                    <em class="prod-price">2,049,000</em><span class="prod-unit">원</span>
+                  </a>
+                </figcaption>
+            </figure>
+          </article>
+          <article class="suggest-prod">
+            <figure class="prod">
+              <a href="#">
+                <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+              </a>
+                <figcaption class="prod-info">
+                  <a href="#">
+                    <h3 class="prod-name">TFG27F10F 게이밍 리얼 100</h3>
+                    <p class="prod-spec">27인치 / 와이드(16:9) / VA / sRGB 99%</p>
+                    <em class="prod-price">2,049,000</em><span class="prod-unit">원</span>
+                  </a>
+                </figcaption>
+            </figure>
+          </article>
+          <article class="suggest-prod">
+            <figure class="prod">
+              <a href="#">
+                <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+              </a>
+                <figcaption class="prod-info">
+                  <a href="#">
+                    <h3 class="prod-name">TFG27F10F 게이밍 리얼 100</h3>
+                    <p class="prod-spec">27인치 / 와이드(16:9) / VA / sRGB 99%</p>
+                    <em class="prod-price">2,049,000</em><span class="prod-unit">원</span>
+                  </a>
+                </figcaption>
+            </figure>
+          </article>
+          <article class="suggest-prod">
+            <figure class="prod">
+              <a href="#">
+                <img src="./source/best-prod-01.jpg" alt="본체" class="prod-img">
+              </a>
+                <figcaption class="prod-info">
+                  <a href="#">
+                    <h3 class="prod-name">TFG27F10F 게이밍 리얼 100</h3>
+                    <p class="prod-spec">27인치 / 와이드(16:9) / VA / sRGB 99%</p>
+                    <em class="prod-price">2,049,000</em><span class="prod-unit">원</span>
+                  </a>
+                </figcaption>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- sec3 banner -->
+  <section class="content-wrap banner-wrap">
+    <a href="#" class="left-banner"><img src="./source/sub-banner-01.png" alt=""></a>
+    <a href="#" class="right-banner"><img src="./source/sub-banner-02.png" alt=""></a>
+  </section>
+
+<!-- sec4 review -->
+  <section class="content-wrap">
+    <div class="section-header">
+      <h2>고객 상품평</h2>
+      <p>한성컴퓨터를 믿고 구매해주신 고객분들의 소중한 상품평입니다.</p>
+    </div>
+
+    <div class="review-inner">
+      <article class="riview-wrap">
+        <figure class="review-content">
+          <a href="#">
+            <img src="./source/review-thumb_01.jpg" alt=""  class="review-img">
+          </a>
+          <a href="#">
+            <h3 class="review-tit">커브드 모니터 끝판왕</h3>
+            <p class="review-detail">기존 한성컴퓨터 ultron 2757c 사용했었는데, 화면벌어짐이 있어서 이번에 새로 구매하게 됐습니다.</p>
+          </a>
+        </figure>
+      </article>
+      <article class="riview-wrap">
+        <figure class="review-content">
+          <a href="#">
+            <img src="./source/review-thumb_02.jpg" alt=""  class="review-img">
+          </a>
+          <a href="#">
+            <h3 class="review-tit">좋아요</h3>
+            <p class="review-detail">케이스 한 두군데 기스가 조금 있었지만 그래도 배송 빠르고 좋았어요.</p>
+          </a>
+        </figure>
+      </article>
+      <article class="riview-wrap">
+        <figure class="review-content">
+          <a href="#">
+            <img src="./source/review-thumb_03.jpg" alt=""  class="review-img">
+          </a>
+          <a href="#">
+            <h3 class="review-tit">고민을 많이 했는데 고민한 시간이 무색하네요.</h3>
+            <p class="review-detail">고민을 많이 했는데 고민한 시간이 무색할 만큼 이쁘고 크고 아름답고 화려해서 매우 만족합니다.</p>
+          </a>
+        </figure>
+    </article>
+    <article class="riview-wrap">
+      <figure class="review-content">
+        <a href="#">
+          <img src="./source/review-thumb_04.jpg" alt=""  class="review-img">
+        </a>
+        <a href="#">
+          <h3 class="review-tit">마음에 들어요 정말</h3>
+          <p class="review-detail">늦게 평을쓰지만 잘쓰고 있어요 드디여 아들이랑 같이 맞추고 배그 해볼 수 있겠네요.</p>
+        </a>
+      </figure>
+    </article>
+    <article class="riview-wrap">
+      <figure class="review-content">
+        <a href="#">
+          <img src="./source/review-thumb_05.jpg" alt=""  class="review-img">
+        </a>
+        <a href="#">
+          <h3 class="review-tit">ULTRON 2760G</h3>
+          <p class="review-detail">27인치지만 평면으로 되어있고 얇은 테두리 덕분에 더 커 보이는 느낌이 있네요.</p>
+        </a>
+      </figure>
+    </article>
+    <article class="riview-wrap">
+      <figure class="review-content">
+        <a href="#">
+          <img src="./source/review-thumb_06.jpg" alt=""  class="review-img">
+        </a>
+        <a href="#" class="review-text">
+          <h3 class="review-tit">첫 모니터 구매 만족^^</h3>
+          <p class="review-detail">첫 모니터 구매해보는데, 상당히 싼 가격에 고품질입니다. 이 가격에 이걸 만나볼 수 있다는게 안 믿기네요.</p>
+        </a>
+      </figure>
+    </article>
+  </div>
+  </section>
+
+<!-- 푸터 -->
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-top">
+        <div class="footer-inner wrap">
+          <div class="footer-inner-left">
+            <dl>
+              <dt>
+                <address>
+                  <a href="#">02&#41;3272-1003</a>
+                </address>
+              </dt>
+              <dd>평일 10:00~17:00</dd>
+            </dl>
+            <ul>
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">서비스센터 안내</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">카톡상담</a></li>
+              <li><a href="#">톡톡상담</a></li>
+            </ul>
+          </div>
+          <ul class="sns">
+            <li>
+              <a href="#" class="sns-fb" target="_blank" title="새 창으로">페이스북</a>
+            </li>
+            <li>
+              <a href="#" class="sns-inst" target="_blank" title="새 창으로">인스타그램</a>
+            </li>
+            <li>
+              <a href="#" class="sns-ytb" target="_blank" title="새 창으로">유튜브</a>
+            </li>
+            <li>
+              <a href="#" class="sns-ntv" target="_blank" title="새 창으로">네이버 티비</a>
+            </li>
+            <li>
+              <a href="#" class="sns-blog" target="_blank" title="새 창으로">네이버 블로그</a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <a href="index.html" class="footer-logo wrap">
+          <img src="./source/header-logo.png" alt="좋은 컴퓨터를 만드는 사람들 한성" >
+        </a>
+        <p class="footer-content wrap">
+        <span>&#40;주&#41;한성</span>
+          <span>
+            <a href="https://goo.gl/maps/eHWPu4xhU1VPw8uT9" target="_blank" class="footer-map"></a>
+            서울특별시 강서구 마곡중앙8로 7길 35, 1층 (마곡동)</span>
+          <span>대표이사 : 한동열</span>
+          <span>사업자등록번호 : 106-86-17410</span>
+        </p>
+        <p class="footer-content wrap">
+          <span>통신판매신고 : 2021-서울강서-1301</span>
+          <span>개인정보 관리자 : 남훈우</span>
+        </p>
+          <address class="footer-address wrap">
+            <span>이메일 : webmaster@monsterlabs.co.kr</span>
+            <span>전화 : 02-715-5714</span>
+            <span>팩스 : 02-714-5714</span>
+          </address>
+        <ul class="footer-content wrap footer-link">
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">소비자보호원</a></li>
+          <li><a href="#">전자거래분쟁조정위원회</a></li>
+          <li><a href="#">제휴문의</a></li>
+          <li><a href="#">사이트맵</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
