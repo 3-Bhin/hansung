@@ -6,6 +6,8 @@ $(function(){
       $('.detail-info').next().addClass('on');
     };
   });
+  
+
 
   /////// 서브 슬라이더
 

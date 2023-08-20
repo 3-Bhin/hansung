@@ -48,6 +48,9 @@ aside{
   align-items: center;
   justify-content: space-between;
 }
+.filter-button button.mirror{
+  transform:none;
+}
 .filter-button button{
   cursor: pointer;
   width: 2.4rem;
@@ -55,6 +58,7 @@ aside{
   background-image: url(../source/icon/ico-upper.svg);
   background-color: #fff;
   border: none;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
 .filter-content label:last-child{
   margin-bottom: 2.4rem;
@@ -361,3 +365,16 @@ figure{
   color: var(--main-color);
 }
 /* 이전 / 다음 */
+
+
+/* 미디어 쿼리 */
+@media screen and (max-width:1280px) {
+  aside{
+    display: none;
+  }
+}
+@media screen and (max-width:1280px) {
+  .prod-wrap{
+    width: 46%;
+  }
+}

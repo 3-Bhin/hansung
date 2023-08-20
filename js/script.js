@@ -15,33 +15,49 @@ $(function(){
   })
 
 
-  //n1 호버 시 n1 드롭다운 메뉴 on
-  // 가져오기
-  // $('.depth2').hide();
-  // let name=0;
-  // $(this).mouseover(function(){
-  //   name = $(this).attr('data-name');
-  //   console.log(name)
-  //   $('.depth2-wrap').find('.'+name).addClass('on');
-  //   $('.depth2-wrap').find('.'+name).stop().slideDown();
-  // });
-  // $('.header').mouseout(function(){
-  //   console.log(name)
-  //   $('.depth2-wrap').find('.on').stop().slideUp();
-  //   $('.depth2-wrap').removeClass('on');
-  // });
-  
-  $('.depth2').hide();
+  $('.depth2-wrap').find('.depth2').hide();
+  $('.depth1').find('.n1').mouseover(function(){
+    let name = $(this).attr('data-name');
+    console.log(name);
+    $('.depth2-wrap').find('.n1').slideDown();
+    $('.depth2-wrap').find('.n5').slideUp();
+    $('.depth2-wrap').find('.n2').slideUp();
+    
+    $('.depth2-wrap').mouseleave(function(){
+      $('.depth2-wrap').find('.depth2').slideUp();
+      
+    });
+  });
+  $('.depth1').find('.n2').mouseover(function(){
+    let name = $(this).attr('data-name');
+    console.log(name);
+    $('.depth2-wrap').find('.n1').slideUp();
+    $('.depth2-wrap').find('.n2').slideDown();
+    $('.depth2-wrap').find('.n5').slideUp();
+    $('.depth2').mouseleave(function(){
+      $('.depth2-wrap').find('.depth2').slideUp();
+    });
+  });
+  $('.depth1').find('.n3').mouseover(function(){
+    $('.depth2-wrap').find('.n1').slideUp();
+    $('.depth2-wrap').find('.n2').slideUp();
+    $('.depth2-wrap').find('.n3').slideUp();
+  });
+  $('.depth1').find('.n4').mouseover(function(){
+    $('.depth2-wrap').find('.depth2').slideUp();
+  });
+  $('.depth1').find('.n5').mouseover(function(){
+    let name = $(this).attr('data-name');
+    console.log(name);
+    $('.depth2-wrap').find('.n1').slideUp();
+    $('.depth2-wrap').find('.n2').slideUp();
+    $('.depth2-wrap').find('.n5').slideDown();
+    $('.depth2').mouseleave(function(){
+      $('.depth2-wrap').find('.depth2').slideUp();
+    });
+  });
 
-  let name = $(this).find('.depth1-li').attr('data-name');
-  console.log(name);
-  $('.depth1').find('.'+name).mouseover(function(){
-    $('.depth2-wrap').find('.'+name).stop().slideDown();
-  });
-  $('.depth2').mouseleave(function(){
-    $('.depth2-wrap').find('ul').stop().slideUp();
-  });
-  
+
 
 
   // 메인 비주얼 재생 정지 이벤트, 마우스 반전 효과
@@ -55,21 +71,16 @@ $(function(){
   // });
 
   // 푸터
-  let sns=$('.sns').find('li a').get();
-  console.log(sns);
-  let snsClass = $('.sns').find('li a').attr('class');
+  
   
 
 
   // sub-product filter-button 클릭 시 닫기
+  $('.filter-content').hide();
   let filterButton=$('.filter-button');
-  $(this).click(function(){
-    if($(this).find(filterButton).hasClass('up')){
-      
-      $('.filterContent').hide();
-    }else{
-      filterButton.removeClass('up');
-    }
+  filterButton.click(function(){
+    $(this).find('button').toggleClass('mirror');
+    $(this).next('.filter-content').slideToggle();
   });
   
 
