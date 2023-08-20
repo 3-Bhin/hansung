@@ -52,9 +52,12 @@ $(function(){
     $('.depth2-wrap').find('.n1').slideUp();
     $('.depth2-wrap').find('.n2').slideUp();
     $('.depth2-wrap').find('.n5').slideDown();
-    $('.depth2').mouseleave(function(){
+    $('.depth2-wrap').mouseleave(function(){
       $('.depth2-wrap').find('.depth2').slideUp();
     });
+  });
+  $('.header-top').mouseover(function(){
+    $('.depth2-wrap').find('.depth2').slideUp();
   });
 
 
